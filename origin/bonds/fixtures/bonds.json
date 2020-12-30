@@ -1,0 +1,41 @@
+[
+    {
+        "model": "bonds.bond",
+        "pk": 1,
+        "fields": {
+            "isin": "FR0000131104",
+            "size": 100000000,
+            "currency": "EUR",
+            "maturity": "2025-02-28",
+            "lei": "R0MUWSFPU8MPRO8K5P83",
+            "legal_name": "BNPPARIBAS",
+            "owner": 1
+        }
+    },
+    {
+        "model": "bonds.bond",
+        "pk": 2,
+        "fields": {
+            "isin": "FR0000131105",
+            "size": 100000000,
+            "currency": "EUR",
+            "maturity": "2025-02-28",
+            "lei": "R0MUWSFPU8MPRO8K5P84",
+            "legal_name": "LCL",
+            "owner": 2
+        }
+    },
+    {
+        "model": "bonds.bond",
+        "pk": 3,
+        "fields": {
+            "isin": "FR0000131108",
+            "size": 100000001,
+            "currency": "USD",
+            "maturity": "2024-02-28",
+            "lei": "R0MUWSFPU8MPRO8K5P34",
+            "legal_name": "ABC",
+            "owner": 2
+        }
+    }
+]

@@ -13,12 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
+from bonds.views import BondsViewSet, HelloWorld
 from django.contrib import admin
 from django.urls import path
+from rest_framework.routers import DefaultRouter
 
-from bonds.views import HelloWorld
+bonds_router = DefaultRouter()
+
+bonds_router.register(r"bonds", BondsViewSet, base_name="bonds")
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('', HelloWorld.as_view())
-]
+    path("admin/", admin.site.urls),
+    path("", HelloWorld.as_view()),
+] + bonds_router.urls
